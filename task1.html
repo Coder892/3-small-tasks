@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero and Footer Image with Cursive Font</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Cursive', serif;
+        }
+
+        /* Navbar Styles */
+        nav {
+            padding: 10px 20px;
+            display: flex;
+            justify-content: flex-end; /* Align items to the right */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            background-color: transparent; /* Remove background color */
+        }
+
+        .navbar {
+            max-width: 1200px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end; /* Align items to the right */
+            align-items: center;
+        }
+
+        .navbar a {
+            color: #004d4d; /* Dark teal color */
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        .navbar a:hover {
+            color: #ffcc00; /* Change color on hover */
+        }
+
+        /* Hero Image Section */
+        .hero {
+            position: relative;
+            height: 100vh; /* Full-screen height */
+            background-image: url('89.jpg'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding-top: 50px; /* Adjust for navbar height */
+        }
+
+        /* Hero Text Position */
+        .hero-text {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            color: white;
+            text-align: left;
+        }
+
+        .hero-text h1 {
+            font-size: 60px;
+            font-family: 'Dancing Script', cursive;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            margin: 0;
+        }
+
+        .hero-text p {
+            font-size: 20px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+            margin: 5px 0 0 0;
+        }
+
+        /* Image Gallery Section */
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .image-gallery img {
+            width: 30%;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #004d4d; /* Dark teal background */
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .footer-content h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .footer-content p {
+            margin: 5px 0;
+        }
+
+        .footer-content .social-icons {
+            margin-top: 20px;
+        }
+
+        .footer-content .social-icons a {
+            margin-right: 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .footer-content .social-icons a:hover {
+            color: #ffcc00; /* Change color on hover */
+        }
+
+        .footer-content .cta-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            color: #004d4d;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .footer-content .cta-button:hover {
+            background-color: #e6b800;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar">
+            <a href="#hero">Home</a>
+            <a href="#photos">My Work</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="hero">
+        <div class="hero-text">
+            <h1>Omkar Patel</h1>
+            <hr>
+            <p>Award-winning Portrait Photographer</p>
+        </div>
+    </div>
+
+    <!-- First Image Gallery Section -->
+    <div class="image-gallery" id="photos">
+        <img src="99.jpg" alt="Buddha Statue">
+        <img src="97.jpg" alt="Taj Mahal">
+    </div>
+
+    <!-- Second Image Gallery Section -->
+    <div class="image-gallery">
+        <img src="83.jpg" alt="Deity Statue">
+        <img src="82.jpg" alt="Rock Formations">
+        <img src="80.jpg" alt="Sunset">
+    </div>
+
+    <!-- Third Image Gallery Section -->
+    <div class="image-gallery">
+        <img src="84.jpg" alt="Person Twirling">
+        <img src="101.jpg" alt="Grand Building">
+    </div>
+
+    <!-- Fourth Image Gallery Section -->
+    <div class="image-gallery">
+        <img src="100.jpg" alt="Historic Fort">
+        <img src="86.jpg" alt="Historic Fort">
+        <img src="78.jpg" alt="Historic Fort">
+    </div>
+
+    <!-- Fifth Image Gallery Section -->
+    <div class="image-gallery">
+        <img src="74.jpg" alt="Historic Fort">
+        <img src="96.jpg" alt="Historic Fort">
+        <!-- Sixth Image Placeholder -->
+        <img src="26.jpg" alt="New Image">
+        <img src="18.jpg" alt="New Image">
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <div class="footer-content">
+            <h1>For Inquiries</h1>
+            <p>123-456-789</p>
+            <p>HELLO@Omkarcreates.COM</p>
+            <button class="cta-button">Sign Up for My Classes</button>
+            <div class="social-icons">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
